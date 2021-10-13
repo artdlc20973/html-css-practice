@@ -12,8 +12,21 @@ body {
 }
 .navbar {
     width: 100%;
-    height: 100vh; 
+    font-size: 1rem;
     color: #fff;
+}
+.navbar a {
+    font-size: 2rem;
+    font-weight: 100;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    color: #fbff00;
+    padding: .3rem 1.7rem;
+}
+.navbar a:hover {
+    font-size: 2rem;
+    background: #fbff00;
+    color: #000;
 }
 ul {
     border: 2px solid red;
@@ -25,24 +38,72 @@ ul {
 }
 ul li {
       display: inline-block; 
-      padding: 1.3rem;
-      margin-right: 1rem;
+      padding: 1rem;
+      margin-right: 2rem;
 }
 ul li a {
       text-decoration: none;
-      font-size: 1.3rem;
       color: #fff;      
 }
 h1 {
-    color: #fff;
+    color: green;
     border: 1px solid white;
     width: fit-content;
-    position: absolute;
-    right: 30%;
-    margin-top: 30%;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 30%;
     font-size: 3rem;
+    padding: 10px;
+    -webkit-text-stroke: 1px #fbff00;
+}
+.span {
+    border: 2px solid greenyellow;
+    width: fit-content;
+    color: #fbff00;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+button {
+    margin-top: 1rem;
+    padding: .7rem 1.3rem;
+    border-radius: 20px;
+    background: transparent;
+    color: #fbff00;
+    border: #118502;
+    font-size: 1.2rem;
+}
+button:hover {
+    background: #118502;
+    color: #fbff00;
+    cursor: pointer;
+}
+p {
+    padding: .7rem;
+    text-align: justify;
 }
 
+.social {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+ul li a  {
+    font-size: 2.5rem;
+}
+
+ul li a:hover  {
+    color: #fbff00;
+    transform: translateX(10px);
+}
+
+/* Media Queries */
 @media (max-width:420px) {
         
 h1 {
@@ -52,7 +113,7 @@ h1 {
     position: absolute;
     right: 20%;
     margin-top: 50%;
-    font-size: 2rem;
+    
 }
 ul li {
     display: inline-block; 
